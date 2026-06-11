@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f7faf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1b4332;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo { color: #fff; font-size: 24px; font-weight: bold; }
+header .logo span { color: #52b788; }
+header nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 600; }
+header nav a:hover { color: #52b788; }
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero-content h1 { font-size: 50px; color: #fff; margin-bottom: 20px; }
+.slogan-box { background-color: rgba(27, 67, 50, 0.9); color: #fff; padding: 20px 30px; border-radius: 15px; }
+
+.content-section { padding: 60px 10%; text-align: center; }
+.content-section h2 { color: #1b4332; margin-bottom: 20px; }
+.content-section p { max-width: 800px; margin: 0 auto 40px; font-size: 18px; }
+
+.cards-container { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.card { background: #fff; padding: 25px; border-radius: 12px; width: 30%; min-width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: left; }
+.alert-card { border-top: 5px solid #d90429; }
+.alert-card h3 { color: #d90429; margin-bottom: 10px; }
+
+.solucoes-section { background-color: #d8f3dc; padding: 60px 10%; text-align: center; }
+.solucoes-section h2 { color: #1b4332; margin-bottom: 30px; }
+.grid-solucoes { display: flex; justify-content: space-around; gap: 40px; flex-wrap: wrap; }
+.solucao-item { background: #fff; padding: 30px; border-radius: 12px; width: 45%; min-width: 300px; text-align: left; border-left: 5px solid #2d6a4f; }
+.solucao-item h3 { color: #2d6a4f; margin-bottom: 15px; }
+
+.quiz-section { padding: 60px 10%; text-align: center; }
+.quiz-card { background: #fff; max-width: 600px; margin: 30px auto 0; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+form { display: flex; flex-direction: column; text-align: left; }
+form label { font-weight: bold; margin-top: 15px; color: #1b4332; }
+form input, form textarea { padding: 12px; margin-top: 5px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; }
+form textarea { height: 100px; resize: none; }
+form button { margin-top: 20px; background-color: #2d6a4f; color: white; padding: 12px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+form button:hover { background-color: #1b4332; }
+
+.mural { margin-top: 30px; text-align: left; }
+.proposta-item { background: #f0fdf4; padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #52b788; }
+.proposta-item strong { color: #1b4332; }
+
+footer { background-color: #1b4332; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+@media (max-width: 768px) { .card, .solucao-item { width: 100%; } }

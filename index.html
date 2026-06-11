@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consciência AgroAmbiental 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Eco<span>Agro</span></div>
+        <nav>
+            <a href="#dados">O Cenário</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#propostas">Sua Voz</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>O Futuro Exige Equilíbrio</h1>
+            <div class="slogan-box">
+                <h2>Agro forte e meio ambiente protegido</h2>
+                <p>A conscientização hoje evita as consequências de amanhã.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dados" class="content-section">
+        <h2>O Desafio Atual</h2>
+        <p>Dados apontam que a maior parte do desmatamento está ligada à expansão agrícola sem planejamento. Como alertava Rachel Carson, a substituição de ecossistemas complexos por monoculturas e o uso excessivo de pesticidas geram um grave desequilíbrio.</p>
+        
+        <div class="cards-container">
+            <div class="card alert-card">
+                <h3>97% do Desmatamento</h3>
+                <p>Grande parte das áreas desmatadas está relacionada à abertura de pastagens e lavouras sem manejo sustentável.</p>
+            </div>
+            <div class="card alert-card">
+                <h3>Monoculturas</h3>
+                <p>A perda da biodiversidade fragiliza o solo, os rios e extingue espécies essenciais para o ecossistema.</p>
+            </div>
+            <div class="card alert-card">
+                <h3>O Impacto Coletivo</h3>
+                <p>As consequências climáticas e a escassez de recursos atingem a todos, sem distinção.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="solucoes-section">
+        <h2>Caminhos para o Equilíbrio</h2>
+        <div class="grid-solucoes">
+            <div class="solucao-item">
+                <h3>Papel do Governo</h3>
+                <p>Fiscalização rigorosa, criação de leis de proteção eficientes e promoção de palestras e reuniões de conscientização para a sociedade.</p>
+            </div>
+            <div class="solucao-item">
+                <h3>Papel da Sociedade e Produtores</h3>
+                <p>Adoção de práticas sustentáveis, como a agroecologia, sistemas ILPF (Integração Lavoura-Pecuária-Floresta) e o consumo consciente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="propostas" class="quiz-section">
+        <h2>Espaço Cidadão</h2>
+        <p>Que lei ou ação você proporia para garantir o equilíbrio entre a agricultura e o meio ambiente?</p>
+        
+        <div class="quiz-card">
+            <form id="form-proposta" onsubmit="enviarProposta(event)">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" required placeholder="Digite seu nome">
+                
+                <label for="ideia">Sua Ideia de Lei ou Projeto:</label>
+                <textarea id="ideia" required placeholder="Ex: Incentivo fiscal para fazendas que preservam as margens dos rios..."></textarea>
+                
+                <button type="submit">Enviar Sugestão</button>
+            </form>
+            <div id="mural-propostas" class="mural"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Plataforma Consciência AgroAmbiental. Educação e Tecnologia pelo Planeta.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
